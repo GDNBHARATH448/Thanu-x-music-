@@ -17,10 +17,10 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://VamsixD:VamsixD@vamsi.x7gyy
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat ID of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002141779241"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002532559194"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 7635867946))
+OWNER_ID = int(getenv("OWNER_ID", 8187405882))
 
 # Fill these variables if you're deploying on Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
