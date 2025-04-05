@@ -36,7 +36,7 @@ async def put_queue(
         "played": 0,
     }
     if forceplay:
-        check = db.get(chat_id)
+        check = db.gen(chat_id)
         if check:
             check.insert(0, put)
         else:
@@ -81,7 +81,7 @@ async def put_queue_index(
         "played": 0,
     }
     if forceplay:
-        check = db.get(chat_id)
+        check = db.gen(chat_id)
         if check:
             check.insert(0, put)
         else:
