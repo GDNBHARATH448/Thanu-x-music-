@@ -17,14 +17,14 @@ from config import BANNED_USERS
 basic = {}
 
 
-def gen_image(videoid):
+def get_image(videoid):
     if os.path.isfile(f"cache/{videoid}.png"):
         return f"cache/{videoid}.png"
     else:
         return config.YOUTUBE_IMG_URL
 
 
-def gen_duration(playing):
+def get_duration(playing):
     file_path = playing[0]["file"]
     if "index_" in file_path or "live_" in file_path:
         return "Unknown"
@@ -41,9 +41,9 @@ def gen_duration(playing):
     & ~BANNED_USERS
 )
 @language
-async def gen_queue(client, message: Message, _):
+async def get_queue(client, message: Message, _):
     if message.command[0][0] == "c":
-        chat_id = await gen_cmode(message.chat.id)
+        chat_id = await get_cmode(message.chat.id)
         if chat_id is None:
             return await message.reply_text(_["setting_7"])
         try:
@@ -56,7 +56,7 @@ async def gen_queue(client, message: Message, _):
         cplay = False
     if not await is_active_chat(chat_id):
         return await message.reply_text(_["general_5"])
-    got = db.gen(chat_id)
+    got = db.get(chat_id)
     if not got:
         return await message.reply_text(_["queue_2"])
     file = got[0]["file"]
@@ -64,11 +64,11 @@ async def gen_queue(client, message: Message, _):
     user = got[0]["by"]
     title = (got[0]["title"]).title()
     typo = (got[0]["streamtype"]).title()
-    DUR = gen_duration(got)
+    DUR = get_duration(got)
     if "live_" in file:
-        IMAGE = gen_image(videoid)
+        IMAGE = get_image(videoid)
     elif "vid_" in file:
-        IMAGE = gen_image(videoid)
+        IMAGE = get_image(videoid)
     elif "index_" in file:
         IMAGE = config.STREAM_IMG_URL
     else:
@@ -147,7 +147,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
         return
     if not await is_active_chat(chat_id):
         return await CallbackQuery.answer(_["general_5"], show_alert=True)
-    got = db.gen(chat_id)
+    got = db.get(chat_id)
     if not got:
         return await CallbackQuery.answer(_["queue_2"], show_alert=True)
     if len(got) == 1:
@@ -204,11 +204,11 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
     user = got[0]["by"]
     title = (got[0]["title"]).title()
     typo = (got[0]["streamtype"]).title()
-    DUR = gen_duration(got)
+    DUR = get_duration(got)
     if "live_" in file:
-        IMAGE = gen_image(videoid)
+        IMAGE = get_image(videoid)
     elif "vid_" in file:
-        IMAGE = gen_image(videoid)
+        IMAGE = get_image(videoid)
     elif "index_" in file:
         IMAGE = config.STREAM_IMG_URL
     else:
