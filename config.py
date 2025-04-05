@@ -10,7 +10,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "22196766"))
 API_HASH = getenv("API_HASH", "cbb54d677872237238a6f584c64d6d8c")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "8110441499:AAHCBQDlFtMkJq3bTyAvak7x1NSgZdGTzZw")
+BOT_TOKEN = getenv("BOT_TOKEN", "8110441499:AAGYIphjI6ElH-CiHG2t3N7K3fI0hTbHk6E")
 # Get your MongoDB URI from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://VamsixD:VamsixD@vamsi.x7gyybv.mongodb.net/?retryWrites=true&w=majority")
 
@@ -48,7 +48,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 # Load session strings from environment variables
-STRING1 = getenv("STRING_SESSION",  "BQFSsh4AXY_voRFMHir7KbqBLtOPGd_Pk5nIZDVVM30k0rO_0Q7f7xhy80mQqytkDAEVcGvVY22O-5bOxwkpcmFnZqmwrFxbLlSQUAltGJUzbLENvLZlww_s1ti_CV8F4OaQ9ohMKaAq4sNCf_Qo3XaPZZ8nkPP123x4qwNZzkaeI3ETrsUJHSDvBSi3AcKp5mnVfs-7z8oCJwhBZEEuZaBL9gk6Nktx2lJD9a17jVhngGSVnagUr1agYEaobAfT05B1Jbl1U_h7fnSWY1oVgi7GLXfo-2AfghCVrKOX1IT3Lzd-gpUX69gFdZklbCHSpqLQyz8H66Pbtfx8-Lbrwcib9EcqYAAAAAHPLw3bAA")
+STRING1 = getenv("STRING_SESSION",  "BQFSsh4AYmMUYxbY1eNpUmOBjfKFiADxzJ2awTjviqH-nL5g_Eln7wZaFJUeWTPaqKszS93ZH0TZ9KhObTwj03T1j09xtyQ6-uVNnIRFBMV2KdeiBwki3egRF2lLjtYnD2_19GJot-xFDcBshF6fXiZeHf1iGTCEOfjnHIMYqnosBDqPnVYgaAMJsa-uXBWFQxJCyQt9EbOEEFqpvl3j9miknSD7ay4cF_vKJM5g_fPEwKdMBu1zX3gofNQLz4XwV6foVCNQMDboVCjV6_78ZswpgAOEAmRd1u2ke_g1h8-U7EVmC8Rcb3DYqp3McY8rtnXHhfEUqRu3jnuC77AMhWqtSdZ1fgAAAAHPLw3bAA")
 STRING2 = getenv("STRING_SESSION2",) 
 STRING3 = getenv("STRING_SESSION3",)
 STRING4 = getenv("STRING_SESSION4",)
