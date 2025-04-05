@@ -112,8 +112,8 @@ def queuemarkup(_, vidid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="๏ sister ๏",
-                url="https://t.me/Thanuxmusic",
+                text="๏ owner ๏",
+                url="https://t.me/chinna_Bct",
             ),
         ],
     ]
