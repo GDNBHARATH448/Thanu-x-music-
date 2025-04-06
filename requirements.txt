@@ -13,6 +13,9 @@ heroku3
 motor
 pillow==9.5.0
 psutil
+pyyaml
+requests
+numpy
 wget
 qrcode
 future==0.18.3
@@ -37,6 +40,7 @@ youtube_search
 youtube-search-python
 googlesearch-python
 unidecode
+uvloop
 #git+https://github.com/joetats/youtube_search@master
 #git+https://github.com/alexmercerind/youtube-search-python@main
 https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.23.zip
