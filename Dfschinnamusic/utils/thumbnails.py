@@ -12,8 +12,6 @@ from Dfschinnamusic import app
 from config import YOUTUBE_IMG_URL
 
 
-
-
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
     heightRatio = maxHeight / image.size[1]
