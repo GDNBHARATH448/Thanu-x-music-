@@ -14,8 +14,6 @@ motor
 pillow==9.5.0
 psutil
 pyyaml
-requests
-numpy
 wget
 qrcode
 future==0.18.3
