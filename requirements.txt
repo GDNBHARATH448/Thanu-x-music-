@@ -11,7 +11,6 @@ dnspython==2.3.0
 hachoir
 heroku3
 motor
-numpy
 pillow==9.5.0
 psutil
 pyyaml
@@ -29,6 +28,7 @@ python-dotenv
 pyyaml==6.0.1
 tgcrypto
 telegraph==2.2.0
+numpy
 yt-dlp
 lexica-api==1.4.7
 httpx==0.25.2
