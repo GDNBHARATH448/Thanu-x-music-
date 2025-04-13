@@ -11,6 +11,7 @@ dnspython==2.3.0
 hachoir
 heroku3
 motor
+numpy
 pillow==9.5.0
 psutil
 pyyaml
