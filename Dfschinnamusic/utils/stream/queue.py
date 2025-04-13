@@ -1,8 +1,9 @@
+import asyncio
 from typing import Union
 
-from config import autoclean, chatstats, userstats
-from config import time_to_seconds
-from Dfschinnamusic.misc import db
+from Dfachinnamusic.misc import db
+from Dfschinnamusic.utils.formatters import check_duration, seconds_to_min
+from config import autoclean, time_to_seconds
 
 
 async def put_queue(
