@@ -1,7 +1,7 @@
 import asyncio
 from typing import Union
 
-from Dfachinnamusic.misc import db
+from Dfschinnamusic.misc import db
 from Dfschinnamusic.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
