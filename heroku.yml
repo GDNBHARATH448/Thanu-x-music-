@@ -1,5 +1,5 @@
 build:
   docker:
     worker: Dockerfile
-run:python3 -m Dfschinnamusic
-  
+run:
+  worker: bash start
