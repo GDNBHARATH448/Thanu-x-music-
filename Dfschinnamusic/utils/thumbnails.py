@@ -4,7 +4,7 @@ import textwrap
 
 import aiofiles
 import aiohttp
-import numpy as np
+from unidecode import unidecode
 
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
