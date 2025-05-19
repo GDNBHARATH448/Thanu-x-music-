@@ -1,5 +1,5 @@
 build:
   docker:
     worker: Dockerfile
-run:
+run:python3 -m Dfschinnamusic
   
