@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from ShrutiMusic import LOGGER, YouTube, app
-from ShrutiMusic.misc import db
-from ShrutiMusic.utils.database import (
+from Dfschinnamusic import LOGGER, YouTube, app
+from Dfschinnamusic.misc import db
+from Dfschinnamusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
