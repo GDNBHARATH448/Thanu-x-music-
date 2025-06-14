@@ -5,24 +5,21 @@ from typing import Union
 
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
-from ntgcalls import TelegramServerError
-from pytgcalls import PyTgCalls
+from pytgcalls import PyTgCalls, StreamType
 from pytgcalls.exceptions import (
     AlreadyJoinedError,
     NoActiveGroupCall,
+    TelegramServerError,
 )
-from pytgcalls.types import (
-    MediaStream,
-    AudioQuality,
-    VideoQuality,
-    Update,
-)
+from pytgcalls.types import Update
+from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
+from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from Dfschinnamusic import LOGGER, YouTube, app
-from Dfschinnamusic.misc import db
-from Dfschinnamusic.utils.database import (
+from ShrutiMusic import LOGGER, YouTube, app
+from ShrutiMusic.misc import db
+from ShrutiMusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
