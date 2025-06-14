@@ -7,7 +7,7 @@ from Dfschinnamusic.misc import dbb, heroku
 from .logging import LOGGER
 
 dirr()
-git()
+#git()
 dbb()
 heroku()
 
